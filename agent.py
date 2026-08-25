@@ -21,8 +21,8 @@ WHATSAPP_GRAPH_VERSION = os.environ.get("BAZYAN_WHATSAPP_GRAPH_VERSION", "v23.0"
 
 RUN_INTERVAL_HOURS = float(os.environ.get("BAZYAN_RUN_INTERVAL_HOURS", "24"))
 ALERT_MIN_SCORE = int(os.environ.get("BAZYAN_ALERT_MIN_SCORE", "80"))
-DASHBOARD_HOST = "127.0.0.1"
-DASHBOARD_PORT = int(os.environ.get("BAZYAN_DASHBOARD_PORT", "8787"))
+DASHBOARD_HOST = "0.0.0.0"
+DASHBOARD_PORT = int(os.environ.get("PORT", "8787"))
 
 instructions = r"""
 You are BAZYAN AI, a professional business intelligence and market
